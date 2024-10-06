@@ -79,7 +79,7 @@ double average(Node *head) {
 
         sum += current->value; 
 
-        count ++;
+        count++;
 
         current = current->next; 
     }
@@ -131,6 +131,11 @@ int main() {
 
     } while (review2 == 'Y' || review2 == 'y'); 
 
+	 reviews(head); 
+
+    double averageVal = average(head); 
+
+    cout << "Average: " << averageVal << endl; 
 	
 }
 
