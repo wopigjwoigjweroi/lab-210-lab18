@@ -13,6 +13,7 @@ struct Node {
 void headNode(Node *&head, double rating, const string &comment); 
 void tailNode(Node *&head, double rating, const string &comment); 
 void reviews(Node *head); 
+double average(Node *head); 
 
 void headNode(Node *&head, double rating, const string &comment) {
 
@@ -51,4 +52,27 @@ void tailNode(Node *&head, double rating, const string &comment) {
     }
 }
 
+void reviews(Node *head) {
+
+    int review = 1; 
+    Node *current = head; 
+
+    while (current) {
+        cout << "> Review #" << review << ": " << ": " << current->value << ": " << current->comment << endl; 
+
+        current = current->next; 
+
+        review++; 
+    }
+     
+}
+
+double average(Node *head) {
+
+	 int count = 0; 
+
+    double sum = 0.0; 
+
+    Node *current = head; 
+}
 
