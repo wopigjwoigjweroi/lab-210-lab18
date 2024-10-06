@@ -74,5 +74,21 @@ double average(Node *head) {
     double sum = 0.0; 
 
     Node *current = head; 
+
+	 while (current) {
+
+        sum += current->value; 
+
+        count ++;
+
+        current = current->next; 
+    }
+
+    return (count > 0) ? sum / count : 0.0; 
+}
+
+int main() {
+
+	
 }
 
