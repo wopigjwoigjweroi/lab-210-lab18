@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string> 
 using namespace std; 
 
 struct Node {
@@ -136,6 +136,14 @@ int main() {
     double averageVal = average(head); 
 
     cout << "Average: " << averageVal << endl; 
-	
+
+	 while (head) {
+        Node *temp = head;
+
+        head = head->next; 
+
+        delete temp; 
+    }
+	return 0; 
 }
 
