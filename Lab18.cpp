@@ -89,6 +89,16 @@ double average(Node *head) {
 
 int main() {
 
-	
+	 Node *head = nullptr; 
+
+    int choice; 
+
+    cout << "Which linked list method should we use?" << endl << "[1] New nodes are added at the head of the linked list" << endl << 
+    "[2] New nodes are added at the tail of the linked list" << endl; 
+
+    cout << "Choice: ";
+    cin >> choice; 
+
+    char review2; 
 }
 
