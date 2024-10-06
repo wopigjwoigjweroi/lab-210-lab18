@@ -100,5 +100,37 @@ int main() {
     cin >> choice; 
 
     char review2; 
+
+	  do {
+
+        double rating; 
+
+        string comment; 
+
+        cout << "Enter review rating 0-5: ";
+        cin >> rating; 
+
+        cin.ignore(); 
+        
+        cout << "Enter review comments: ";
+        getline(cin, comment); 
+
+        if (choice == 1) {
+
+            headNode(head, rating, comment); 
+
+        } else if (choice == 2) {
+
+            tailNode(head, rating, comment); 
+
+        } 
+
+        cout << "Enter another review? Y/N: ";
+        cin >> review2; 
+
+
+    } while (review2 == 'Y' || review2 == 'y'); 
+
+	
 }
 
